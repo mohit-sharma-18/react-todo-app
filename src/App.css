@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background: aliceblue;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.todoBox {
+  margin-top: 1rem;
+  background: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.formContainer {
+  background-color: #fff;
+  width: 30rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.saveBtn,
+.removeAllBtn {
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 2px;
+  border: unset;
+  background: green;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 0.7rem;
+  font-family: "Roboto", sans-serif;
+}
+.saveBtn,
+.removeAllBtn {
+  background-color: #ff5200;
+}
+input.inputBox {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+}
+li {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  padding: 8px;
+  list-style: none;
+}
+button.removeBtn {
+  border: none;
+  background: #c50000;
+  color: #fff;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 5px;
+}
+input:focus {
+  outline: none;
+}
+.addBtn {
+  float: right;
+  margin-top: -27px;
+  position: relative;
+  margin-right: 22px;
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+}
+.removeBtn {
+  margin-right: 14px;
+}
+i {
+  cursor: pointer;
+}
+
+.taskCount {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  color: #b5b4b4;
+}
+input.inputBox::placeholder {
+  opacity: 0.5;
 }
